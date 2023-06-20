@@ -4,6 +4,9 @@ import renderer from 'vite-plugin-electron-renderer'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
+// https://github.com/electron-vite/vite-plugin-electron
+// https://github.com/electron-vite/vite-plugin-electron-renderer
+
 export default defineConfig({
   root: './renderer/src',
   publicDir: '../public',
@@ -11,7 +14,6 @@ export default defineConfig({
     vue(),
     electron([
       {
-        // Main-Process entry file of the Electron App.
         entry: 'electron/src/main.ts',
         vite: {
           build: {
