@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import electron from 'vite-plugin-electron'
-import renderer from 'vite-plugin-electron-renderer'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import electron from 'vite-plugin-electron';
+import renderer from 'vite-plugin-electron-renderer';
+import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 // https://github.com/electron-vite/vite-plugin-electron
@@ -17,11 +17,11 @@ export default defineConfig({
         entry: 'electron/src/main.ts',
         vite: {
           build: {
-            outDir: 'electron/dist'
-          }
-        }
+            outDir: 'electron/dist',
+          },
+        },
       },
     ]),
     renderer(),
   ],
-})
+});

@@ -4,24 +4,17 @@
   "directories": {
     "output": "release/${version}"
   },
-  "files": [
-    "electron/dist",
-    "renderer/dist"
-  ],
+  "files": ["electron/dist", "renderer/dist"],
   "mac": {
     "artifactName": "${productName}-${version}.${ext}",
-    "target": [
-      "dmg"
-    ]
+    "target": ["dmg"]
   },
   "win": {
     "artifactName": "${productName}-${version}.${ext}",
     "target": [
       {
         "target": "nsis",
-        "arch": [
-          "x64"
-        ]
+        "arch": ["x64"]
       }
     ]
   },
