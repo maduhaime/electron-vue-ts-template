@@ -9,7 +9,7 @@
     "output": "release/${version}"
   },
   "files": [
-    "dist-electron",
+    "electron/dist",
     "renderer/dist"
   ],
   "mac": {

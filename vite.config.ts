@@ -12,7 +12,12 @@ export default defineConfig({
     electron([
       {
         // Main-Process entry file of the Electron App.
-        entry: 'electron/main.ts',
+        entry: 'electron/src/main.ts',
+        vite: {
+          build: {
+            outDir: 'electron/dist'
+          }
+        }
       },
     ]),
     renderer(),
