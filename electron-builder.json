@@ -1,8 +1,4 @@
-/**
- * @see https://www.electron.build/configuration/configuration
- */
 {
-  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
   "appId": "YourAppID",
   "asar": true,
   "directories": {
@@ -13,12 +9,13 @@
     "renderer/dist"
   ],
   "mac": {
-    "artifactName": "${productName}_${version}.${ext}",
+    "artifactName": "${productName}-${version}.${ext}",
     "target": [
       "dmg"
     ]
   },
   "win": {
+    "artifactName": "${productName}-${version}.${ext}",
     "target": [
       {
         "target": "nsis",
@@ -26,8 +23,7 @@
           "x64"
         ]
       }
-    ],
-    "artifactName": "${productName}_${version}.${ext}"
+    ]
   },
   "nsis": {
     "oneClick": false,
