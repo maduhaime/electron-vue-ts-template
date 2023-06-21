@@ -1,18 +1,51 @@
-# Vue 3 + TypeScript + Vite
+# Gabarit d'application avec Electron, Vue et Typescript
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Gabarit de développement applicatif, basé sur l'utilisation des standards suivants:
 
-## Recommended IDE Setup
+### [Electron](https://www.electronjs.org/)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Build cross-platform desktop apps with JavaScript, HTML, and CSS
 
-## Type Support For `.vue` Imports in TS
+### [Vue](https://vuejs.org/)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+The Progressive JavaScript Framework. An approachable, performant and versatile framework for building web user interfaces.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### [Vite](https://vitejs.dev/)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Next Generation Frontend Tooling
+
+### [Sass (SCSS)](https://sass-lang.com)
+
+CSS with superpowers. Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+### [Prettier](https://prettier.io)
+
+An opinionated code formatter
+
+### [TypeScript](https://www.typescriptlang.org)
+
+TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+
+### [TypeScript ESlint](https://typescript-eslint.io)
+
+The tooling that enables [ESlint](https://eslint.org) and Prettier to support TypeScript.
+
+## Configuration pour [Visual Studio Code (IDE)](https://code.visualstudio.com/)
+
+Plugins
+
+- [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+  Language support for Vue 3
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+  Vue Plugin for TypeScript server
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  Code formatter using prettier
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  Integrates ESLint JavaScript into VS Code.
+
+## Inspecter un fichier asar
+
+```bash
+npm install --engine-strict @electron/asar
+npx asar extract <archive> <dest>
+```
