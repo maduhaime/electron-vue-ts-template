@@ -10,6 +10,9 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   root: './renderer/src',
   publicDir: '../public',
+  build: {
+    outDir: '../dist',
+  },
   plugins: [
     vue(),
     electron([
