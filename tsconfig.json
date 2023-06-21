@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2022",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -20,6 +20,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["renderer/**/*.d.ts", "renderer/src/**/*.ts", "renderer/src/**/*.vue", "electron"],
+  "include": [
+    "renderer/**/*.d.ts",
+    "renderer/src/**/*.ts",
+    "renderer/src/**/*.vue",
+    "electron/**/*.d.ts",
+    "electron/src/**/*.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
