@@ -32,7 +32,7 @@ The tooling that enables [ESlint](https://eslint.org) and Prettier to support Ty
 
 ## Configuration pour [Visual Studio Code (IDE)](https://code.visualstudio.com/)
 
-Plugins
+Extensions installées et configurées pour à même le gabarit.
 
 - [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   Language support for Vue 3
@@ -44,6 +44,8 @@ Plugins
   Integrates ESLint JavaScript into VS Code.
 
 ## Inspecter un fichier asar
+
+ASAR signifie Atom Shell Archive Format. Une archive asar est un simple format d'archive du genre de tar, qui concatène des fichiers en un seul fichier. Le format ASAR a été créé principalement pour améliorer les performances sous Windows lorsque il y a de grandes quantités de petits fichiers.
 
 ```bash
 npm install --engine-strict @electron/asar
