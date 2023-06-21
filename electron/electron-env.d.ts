@@ -2,7 +2,7 @@
 
 declare namespace NodeJS {
   interface ProcessEnv {
-    DIST: string
-    PUBLIC: string
+    DIST: string;
+    PUBLIC: string;
   }
 }
